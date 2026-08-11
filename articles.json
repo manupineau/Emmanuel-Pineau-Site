@@ -1,0 +1,112 @@
+[
+  {
+    "id": "luxury-watches",
+    "titre": "luxury watches",
+    "url": "article-luxury-watches.html"
+  },
+  {
+    "id": "ADV-web-2025",
+    "titre": "Astier de Villatte web 2025",
+    "url": "article-ADV-web-2025.html"
+  },
+  {
+    "id": "golden-girls",
+    "titre": "Golden Girls",
+    "url": "article-golden-girls.html"
+  },
+  {
+    "id": "girls-and-roses",
+    "titre": "Girls and Roses",
+    "url": "article-girls-and-roses.html"
+    },
+    {
+    "id": "ADV-fragrances",
+    "titre": "Astier de Villatte Fragrances",
+    "url": "article-ADV-fragrances.html"
+  },
+  {
+        "id": "ADV-sacai",
+        "titre": "Astier de Villatte Sacai",
+        "url": "article-ADV-sacai.html"
+    },
+    {
+        "id": "elie-top-still-life",
+        "titre": "Elie Top Still Life",
+        "url": "article-elie-top-still-life.html"
+    },
+    {
+        "id": "ADV-noel",
+        "titre": "Astier de Villatte Noël",
+        "url": "article-ADV-noel.html"
+    },
+    {
+        "id": "elie-top-jewelry",
+        "titre": "Elie Top Jewelry",
+        "url": "article-elie-top-jewelry.html"
+    },
+    {
+        "id": "LBR-antic-gold",
+        "titre": "La Bouche Rouge - Antic Gold",
+        "url": "article-LBR-antic-gold.html"
+    },
+    {
+        "id": "ADV-grace-coddington",
+        "titre": "Astier de Villatte - Grace Coddington",
+        "url": "article-ADV-Grace-Coddington.html"
+    },
+    {
+        "id": "ADV-eva-jospin",
+        "titre": "Astier de Villatte - Eva Jospin",
+        "url": "article-ADV-Eva-jospin.html"
+    },
+    {
+        "id": "athletica-fragrance",
+        "titre": "Athletica Magazine - Fragrances",
+        "url": "article-athletica-fragrance.html"
+    },
+    {
+        "id": "louis-vuitton",
+        "titre": "Louis Vuitton",
+        "url": "article-louis-vuitton.html"
+    },
+    {
+        "id": "beauty-close-up",
+        "titre": "Beauty in Close Up",
+        "url": "article-beauty-close-up.html"
+    },
+    {
+        "id": "cartier",
+        "titre": "Cartier",
+        "url": "article-cartier.html"
+    },
+    {
+        "id": "athletica-watches",
+        "titre": "Athletica Magazine - Watches",
+        "url": "article-athletica-watches.html"
+    },
+    {
+        "id": "tropik-tropik",
+        "titre": "Tropik Tropik",
+        "url": "article-tropik-tropik.html"
+    },
+    {
+        "id": "LBR-cosmetics",
+        "titre": "La Bouche Rouge - cosmetics",
+        "url": "article-LBR-cosmetics.html"
+    },
+    {
+        "id": "skp-magazine",
+        "titre": "SKP magazine",
+        "url": "article-skp-magazine.html"
+    },
+     {
+        "id": "kentmere-100",
+        "titre": "8 good reasons to use Kentmere 100",
+        "url": "article-kentmere-100.html"
+    },
+    {
+        "id": "kodak-xtol",
+        "titre": "5 good reasons to use Kodak Xtol",
+        "url": "article-5-good-reasons-to-use-kodak-xtol.html"
+    }
+]
