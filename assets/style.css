@@ -478,7 +478,6 @@ form.contact-form button:hover{ background:var(--bg); color:var(--accent); borde
 img {
   -webkit-user-drag: none;  /* Empêche le glisser-déposer sur Chrome/Safari */
   user-select: none;        /* Empêche la sélection de l'image */
-  pointer-events: none;     /* Optionnel : Bloque toutes les actions de la souris (clic droit inclus) */
 }
 
 
