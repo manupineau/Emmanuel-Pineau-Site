@@ -98,16 +98,17 @@ nav.primary-nav a[aria-current="page"]::after{
 @media (max-width: 780px){
   nav.primary-nav{
     position:fixed; inset:66px 0 0 0;
-    background:var(--bg);
+    background:#fff;
     flex-direction:column; gap:0;
     padding:1rem var(--gutter);
     transform:translateY(-8px);
     opacity:0; pointer-events:none;
     transition:opacity .25s ease, transform .25s ease;
   }
-  nav.primary-nav.open{ opacity:1; pointer-events:auto; transform:translateY(0); }
+  nav.primary-nav.open{ background:#fff; opacity:1; pointer-events:auto; transform:translateY(0); }
   nav.primary-nav a{
-    padding:1.1rem 0; border-bottom:1px solid var(--line);
+    background:#fff; background-size: 100%;
+    padding:1.1rem 0.9; border-bottom:1px solid var(--line);
     font-size:.95rem;
   }
   .menu-toggle{ display:block; }
