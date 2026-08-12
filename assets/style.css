@@ -452,9 +452,9 @@ form.contact-form button:hover{ background:var(--bg); color:var(--accent); borde
     max-width: auto;
     padding: 0 20px;
     font-family:var(--serif);
-    font-weight:200;
+    font-weight:100;
     font-style:normal;
-    font-size:clamp(2rem, 1.5vw, 1.2rem);
+    font-size:clamp(1rem, 1.5vw, 1.2rem);
     color:var(--fg);
 }
 
