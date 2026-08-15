@@ -480,6 +480,21 @@ img {
   user-select: none;        /* Empêche la sélection de l'image */
 }
 
+figure.full-width {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: block; /* Sécurité pour le rendu HTML5 */
+}
+
+/* 2. On cible l'image à l'intérieur de la balise picture */
+figure.full-width picture img {
+  width: 100%;
+  height: auto;       /* Conserve les proportions d'origine de l'image */
+  display: block;     /* Supprime l'espace vide parasite sous l'image */
+  object-fit: cover;  /* Assure un rendu propre sans déformation */
+}
+
 
 
 
