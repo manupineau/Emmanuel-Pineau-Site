@@ -6,7 +6,11 @@
 <meta name="robots" content="index, follow">
 <meta name="keywords" content="Emmanuel Pineau, photography, portrait, Astier de Villatte, Eva Jospin">
 <meta name="description" content="Portrait of Eva Jospin for her collaboration with Astier de Villatte, photography by Sophie Delaporte, still life phography by Emmanuel Pineau.">
-<meta name="author" content="Emmanuel Pineau">  
+<meta name="author" content="Emmanuel Pineau">
+<meta property="og:image" content="https://www.emmanuelpineau.net/images/new/Crop-16x9-HD/1200x630/Emmanuel-Pineau-blog-crop-HD-13-1200x630.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:type" content="image/jpeg" />  
 <title>Astier de Villatte - Eva Jospin</title>
 <link rel="icon" type="image/x-icon" href="/images/Emmanuel-Pineau-logo-2025.png">
 <link rel="stylesheet" href="assets/style.css">
@@ -34,11 +38,23 @@
   <p class="caption">03/09/2024</p>
 </div>
 
-<img class="full-width" src="images/new/Crop-16x9-HD/Emmanuel-Pineau-blog-crop-HD-13.jpg" alt="Astier de Villatte - Eva Jospin's collection, still life photography by Emmanuel Pineau">
-<div class="intro-block" style="border-bottom:none;">
-<p style="margin-bottom:1rem;">Portrait of Eva Jospin for her collaboration with Astier de Villatte, photography by Sophie Delaporte</p>
-  <p style="margin-bottom:1rem;">Lighting and retouching by Emmanuel Pineau</p>
-</div>
+<figure class="full-width">
+<div class="intro-block" style="border-bottom:none;"></div>
+  <picture>
+    <!-- Version ultra-compressée pour les navigateurs modernes -->
+    <source srcset="images/new/Crop-16x9-HD/Emmanuel-Pineau-blog-crop-HD-13.avif" type="image/avif">
+    
+    <!-- Version de secours pour les anciens appareils -->
+    <img src="images/new/Crop-16x9-HD/Emmanuel-Pineau-blog-crop-HD-13.jpg" 
+         alt="Astier de Villatte - Eva Jospin's collection, still life photography by Emmanuel Pineau"
+         loading="lazy">
+  </picture>
+  
+  <figcaption class="intro-block" style="border-bottom: none;">
+    <p style="margin-bottom: 1rem;">Portrait of Eva Jospin for her collaboration with Astier de Villatte, photography by Sophie Delaporte</p>
+    <p style="margin-bottom: 1rem;">Lighting and retouching by Emmanuel Pineau</p>
+  </figcaption>
+</figure>
 <div class="row">
   <div class="column">
 <img class="full-width" src="images/new/ADV-Eva-Jospin/Emmanuel-Pineau-ADV-Eva-Jospin-02.jpg" alt="Eva Jospin at Astier de Villatte's manufacturing workshop, portrait photography by Sophie Delaporte">
