@@ -7,6 +7,10 @@
 <meta name="keywords" content="Emmanuel Pineau, photography, Louis Vuitton, fashion">
 <meta name="description" content="Fashion series of Louis Vuitton items photographed by Sophie Delaporte for Flair Magazine, featuring lighting and retouching by Emmanuel Pineau.">
 <meta name="author" content="Emmanuel Pineau">  
+<meta property="og:image" content="https://www.emmanuelpineau.net/images/new/Crop-16x9-HD/1200x630/Emmanuel-Pineau-blog-crop-HD-10-1200x630.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:type" content="image/jpeg" /> 
 <title>Flair magazine, Louis Vuitton</title>
 <link rel="icon" type="image/x-icon" href="/images/Emmanuel-Pineau-logo-2025.png">
 <link rel="stylesheet" href="assets/style.css">
@@ -34,11 +38,24 @@
   <p class="caption">03/09/2023</p>
 </div>
 
-<img class="full-width" src="images/new/Crop-16x9-HD/Emmanuel-Pineau-blog-crop-HD-10.jpg" alt="Louis Vuitton fashion by Sophie Delaporte">
-<div class="intro-block" style="border-bottom:none;">
-<p style="margin-bottom:1rem;">Louis Vuitton fashion, photography by Sophie Delaporte, luxury fashion for Flair Magazine.</p>
+<figure class="full-width">
+<div class="intro-block" style="border-bottom:none;"></div>
+  <picture>
+    <!-- Version ultra-compressée pour les navigateurs modernes -->
+    <source srcset="images/new/Crop-16x9-HD/Emmanuel-Pineau-blog-crop-HD-10.avif" type="image/avif">
+    <!-- 2. Version JPEG de secours pour MOBILE -->
+    <source srcset="images/new/Crop-16x9-HD/1200x630/Emmanuel-Pineau-blog-crop-HD-10-1200x630.jpg" media="(max-width: 768px)" type="image/jpeg">
+    <!-- Version de secours pour les anciens appareils -->
+    <img src="images/new/Crop-16x9-HD/Emmanuel-Pineau-blog-crop-HD-10.jpg" 
+         alt="Astier de Villatte Noël, still life photography by Emmanuel Pineau"
+         loading="lazy">
+  </picture>
+  <figcaption class="intro-block" style="border-bottom: none;">
+  <p style="margin-bottom:1rem;">Louis Vuitton fashion, photography by Sophie Delaporte, luxury fashion for Flair Magazine.</p>
   <p style="margin-bottom:1rem;">Lighting and retouching by Emmanuel Pineau</p>
-</div>
+  </figcaption>
+</figure>
+
 <div class="row">
   <div class="column">
 <img class="full-width" src="images/new/Flair-louis-vuitton/Emmanuel-Pineau-Flair-Louis-Vuitton-02.jpg" alt="Louis Vuitton fashion by Sophie Delaporte">

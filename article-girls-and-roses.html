@@ -7,6 +7,10 @@
 <meta name="keywords" content="Emmanuel Pineau, photography, beauty, Vogue.it, Sophie Delaporte">
 <meta name="description" content="Beauty story photography by Sophie Delaporte for Vogue.it, lighting and retouching by Emmanuel Pineau.">
 <meta name="author" content="Emmanuel Pineau">  
+<meta property="og:image" content="https://www.emmanuelpineau.net/images/new/Crop-16x9-HD/1200x630/Emmanuel-Pineau-blog-crop-HD-24-1200x630.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:type" content="image/jpeg" /> 
 <title>Girls and Roses</title>
 <link rel="icon" type="image/x-icon" href="/images/Emmanuel-Pineau-logo-2025.png">
 <link rel="stylesheet" href="assets/style.css">
@@ -34,12 +38,24 @@
   <p class="caption">05/12/2025</p>
 </div>
 
-
-<img class="full-width" src="images/new/girls-and-roses/Emmanuel-girls-and-roses-01.jpg" alt="Beauty photography for Vogue.it by Sophie Delaporte">
-<div class="intro-block" style="border-bottom:none;"> 
-<p style="margin-bottom:1rem;">Beauty story photography by Sophie Delaporte for Vogue.it.</p>
+<figure class="full-width">
+<div class="intro-block" style="border-bottom:none;"></div>
+  <picture>
+    <!-- Version ultra-compressée pour les navigateurs modernes -->
+    <source srcset="images/new/Crop-16x9-HD/Emmanuel-Pineau-blog-crop-HD-24.avif" type="image/avif">
+    <!-- 2. Version JPEG de secours pour MOBILE -->
+    <source srcset="images/new/Crop-16x9-HD/1200x630/Emmanuel-Pineau-blog-crop-HD-24-1200x630.jpg" media="(max-width: 768px)" type="image/jpeg">
+    <!-- Version de secours pour les anciens appareils -->
+    <img src="images/new/Crop-16x9-HD/Emmanuel-Pineau-blog-crop-HD-24.jpg" 
+         alt="Astier de Villatte Noël, still life photography by Emmanuel Pineau"
+         loading="lazy">
+  </picture>
+  <figcaption class="intro-block" style="border-bottom: none;">
+  <p style="margin-bottom:1rem;">Beauty story photography by Sophie Delaporte for Vogue.it.</p>
   <p style="margin-bottom:1rem;">Lighting and retouching by Emmanuel Pineau</p>
-</div>
+  </figcaption>
+</figure>
+
 <div class="row">
   <div class="column">
 <img class="full-width" src="images/new/girls-and-roses/Emmanuel-girls-and-roses-02.jpg" alt="Girls and Roses, beauty story for Vogue.it by Sophie Delaporte">
