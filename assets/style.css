@@ -419,7 +419,7 @@ form.contact-form button:hover{ background:var(--bg); color:var(--accent); borde
 .full-width{
   width:100%;
   max-width:3000px;
-   padding:clamp(1rem,0vw,1rem);
+  padding:clamp(1rem,0vw,1rem);
   display:flex; flex-direction:column; gap:0rem;
   align-items:start;
 }
