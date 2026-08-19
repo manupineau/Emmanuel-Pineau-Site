@@ -1,0 +1,5 @@
+# Règles d'exploration pour tous les robots
+User-agent: *
+Allow: /
+
+Sitemap: https://www.emmanuelpineau.net/sitemap.xml
