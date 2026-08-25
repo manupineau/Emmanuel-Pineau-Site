@@ -26,30 +26,34 @@
   <p class="eyebrow">Available for fashion, beauty, music video</p>
   <h1>Contact</h1>
   </div>
+
+<picture>
+        <source media="(max-width: 767px)" srcset="images/emmanuel-pineau-contact-01-mobile.avif" type="image/avif">
+        <source media="(min-width: 768px)" srcset="images/emmanuel-pineau-contact-01-desktop.avif" type="image/avif">
+        <!-- On dit au navigateur d'afficher cette image en priorité absolue -->
+        <img src="images/emmanuel-pineau-contact-01-desktop.jpg" alt="Emmanuel Pineau" class="slide-img" fetchpriority="high">
+    </picture>
+
 <section class="hero">
   <h1>
   <p><em>Emmanuel Pineau / +33 612 217 427</em></p>
   </h1>
-  </section>
-
-
-<div class="contact-grid">
+  <div class="contact-grid">
   <div class="reveal">
     <h3>Write directly</h3>
     <a class="big-link" href="mailto:emmanuel@emmanuelpineau.net">emmanuel@emmanuelpineau.net</a>
     <p style="margin-top:1.5rem; color:var(--fg-dim); font-family:var(--mono); font-size:.8rem;">
       Paris, France
     </p>
-    <p style="margin-top:2rem;">
-      <a class="cta" style="display:inline-flex;align-items:center;gap:.5rem;font-family:var(--mono);font-size:.72rem;letter-spacing:.09em;text-transform:uppercase;border-bottom:1px solid var(--fg);padding-bottom:.35rem;" href="https://www.instagram.com/emmanuel_pineau/" target="_blank" rel="noopener">Instagram →</a>
-    </p>
   </div>
 </div>
+</section>
+
 
 <footer class="site-footer">
   <span>© emmanuel pineau 2026</span>
   <div class="socials">
-    <a href="https://www.instagram.com/emmanuel_pineau/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.instagram.com/emmanuel_pineau/" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '_blank'); return false;">Instagram</a>
     <a href="contact.html">Contact</a>
   </div>
 </footer>
