@@ -83,7 +83,7 @@ nav.primary-nav a:hover,
 nav.primary-nav a[aria-current="page"]{ color:var(--fg); }
 nav.primary-nav a[aria-current="page"]::after{
   content:"";
-  position:absolute; left:0; right:0; bottom:-4px;
+  position:absolute; left: 0;; right:0; bottom:-4px;
   height:1px; background:var(--accent);
 }
 
@@ -97,21 +97,41 @@ nav.primary-nav a[aria-current="page"]::after{
 
 @media (max-width: 780px){
   nav.primary-nav{
-    position:fixed; inset:66px 0 0 0;
+    position:fixed; 
+    inset:66px 0 0 0;
     background:#fff;
-    flex-direction:column; gap:0;
+    flex-direction:column; 
+    gap:0;
     padding:1rem var(--gutter);
     transform:translateY(-8px);
-    opacity:0; pointer-events:none;
+    opacity:0; 
+    pointer-events:none;
     transition:opacity .25s ease, transform .25s ease;
   }
-  nav.primary-nav.open{ background:#fff; opacity:1; pointer-events:auto; transform:translateY(0); }
-  nav.primary-nav a{
-    background:#fff; background-size: 100%;
-    padding:1.1rem 0.9; border-bottom:1px solid var(--line);
-    font-size:.95rem;
+  
+  nav.primary-nav.open { 
+    background:#fff; 
+    opacity:1; 
+    pointer-events:auto; 
+    transform:translateY(0); 
   }
-  .menu-toggle{ display:block; }
+  
+  nav.primary-nav a {
+    background:#fff; 
+    background-size: 100%;
+    /* 🛠️ Correction syntaxe (remplacement de 0.9 par 0.9rem) */
+    padding: 1.1rem 0.9rem; 
+    border-bottom: 1px solid var(--line);
+    font-size: .95rem;
+    display: block; /* S'assure que le lien prend toute la largeur pour le clic */
+    
+    /* 🚀 LA LIGNE À AJOUTER : Décale le texte vers la droite */
+    padding-left: 1.5rem; /* Ajustez cette valeur (ex: 2rem) selon vos goûts */
+  }
+  
+  .menu-toggle { 
+    display:block; 
+  }
 }
 
 /* ---------- hero ---------- */
@@ -510,7 +530,7 @@ figure.full-width picture img {
     height: 100vh;
     z-index: 1; /* Niveau le plus bas */
     overflow: hidden;
-    background-color: #000;
+    background-color: hsl(0, 0%, 100%);
 }
 
 .slide { 
