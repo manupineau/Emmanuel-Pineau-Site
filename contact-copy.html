@@ -38,69 +38,49 @@
   <h1>
   <p><em>Emmanuel Pineau / +33 612 217 427</em></p>
   </h1>
+  <div class="contact-grid">
+  <div class="reveal">
+    <h3>Write directly</h3>
+    <a class="big-link" href="mailto:emmanuel@emmanuelpineau.net">emmanuel@emmanuelpineau.net</a>
+    <p style="margin-top:1.5rem; color:var(--fg-dim); font-family:var(--mono); font-size:.8rem;">
+      Paris, France
+    </p>
+  </div>
+</div>
+<form action="contact.php" method="POST">
+  
+  <!-- Champ Nom -->
+  <div class="form-group">
+  <div><label for="name">Name:</label></div>
+  <input type="text" id="name" name="name" required placeholder="Your name">
+  </div>
+
+  <!-- Champ Email -->
+  <div class="form-group">
+  <div><label for="email">Email:</label></div>
+    <input type="email" id="email" name="email" required placeholder="your@email.com">
+  </div>
+
+  <!-- Champ Message -->
+  <div class="form-group">
+  <div><label for="message">Message:</label></div>
+    <textarea id="message" name="message" rows="5" required placeholder="Your message here..."></textarea>
+  </div>
+
+  <!-- Bouton d'envoi -->
+  <button type="submit">Send Message</button>
+
+</form>
 </section>
 
-<style>
-        .container {
-            width: 80%;
-            margin: 50px auto;
-            background: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .form-group {
-            margin-bottom: 15px;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            color: #555;
-        }
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 8px;
-            box-sizing: border-box;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        .form-group input[type="submit"] {
-            background-color: #555;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-        }
-        .form-group input[type="submit"]:hover {
-            background-color: #555;
-        }
-        .message {
-            margin-top: 20px;
-            text-align: center;
-            color: #333;
-        }
-    </style>
- <div class="page-header">
-        <h1>Send a message</h1>
-        <form action="emmanuel.pineau.speos@gmail.com" method="post">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Send Message">
-            </div>
-        </form>
-    </div>
-<body>
-   
+
+
+
+<div class="intro-block">
+  <div class="reveal">
+  <a class="cta" href="index.html">Back Home →</a>
+  </div>
+</div>
 
 
 <footer class="site-footer">
