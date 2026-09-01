@@ -48,21 +48,38 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     revealEls.forEach((el) => el.classList.add("is-visible"));
   }
-
-  /* --- formulaire de contact : simulation d'envoi (à remplacer par un vrai backend / service type Formspree) --- */
+  /* --- formulaire de contact : envoi réel via fetch vers Formspree --- */
   const form = document.querySelector("form.contact-form");
   if (form) {
     form.addEventListener("submit", (e) => {
       e.preventDefault();
       const btn = form.querySelector("button");
       const original = btn.textContent;
-      btn.textContent = "Message sent ✓";
       btn.disabled = true;
-      setTimeout(() => {
-        btn.textContent = original;
-        btn.disabled = false;
-        form.reset();
-      }, 2500);
+      btn.textContent = "Sending…";
+
+      fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" },
+      })
+        .then((response) => {
+          if (response.ok) {
+            btn.textContent = "Message sent ✓";
+            form.reset();
+          } else {
+            btn.textContent = "Error, please retry";
+          }
+        })
+        .catch(() => {
+          btn.textContent = "Error, please retry";
+        })
+        .finally(() => {
+          setTimeout(() => {
+            btn.textContent = original;
+            btn.disabled = false;
+          }, 2500);
+        });
     });
   }
 });
