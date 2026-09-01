@@ -3,7 +3,7 @@
    Thème : blanc, minimal, contemporain — catalogue éditorial
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+@import url('https://googleapis.com');
 
 :root{
   --bg:        #ffffff;
@@ -15,9 +15,13 @@
   --line:      #e6e4df;
   --line-strong:#131211;
 
+  /* VOS ANCIENNES POLICES COMPLÈTES */
   --serif: "Instrument Serif", Georgia, serif;
   --sans:  "Inter", system-ui, sans-serif;
   --mono:  "IBM Plex Mono", monospace;
+
+  /* 2. VOTRE NOUVELLE POLICE ÉPURÉE POUR LE LOGO */
+  --logo-font: "Cinzel", serif;
 
   --gutter: clamp(1.25rem, 4vw, 3rem);
 }
@@ -59,12 +63,18 @@ a{ color:inherit; text-decoration:none; }
   border-bottom:1px solid var(--line);
 }
 
-.logo{
-  font-family:var(--serif);
-  font-style:italic;
-  font-weight:400;
-  font-size:1.3rem;
-  letter-spacing:.01em;
+.logo {
+  font-family: var(--sans); /* Utilise la nouvelle police Cinzel */
+  font-weight: 400; /* Utilise la version fine de Cinzel */
+  font-style: normal;
+  font-size: 1.1rem;
+  letter-spacing: 0.4em; /* Espacement large pour un effet très galerie d'art */
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgb(105, 105, 105);
+  border-radius: 55px;
+  padding: 0.6rem 1.2rem;
 }
 .logo span{ color:var(--fg-faint); font-style:normal; font-family:var(--mono); font-size:.65rem; margin-left:.6rem; letter-spacing:.15em; text-transform:uppercase; }
 
@@ -347,7 +357,17 @@ hr.rule{
 .contact-grid .big-link:hover{ color:var(--accent); border-color:var(--accent); }
 @media (max-width:780px){ .contact-grid{ grid-template-columns:1fr; gap:2.5rem; } }
 
-form.contact-form{ display:flex; flex-direction:column; gap:1.25rem; max-width:520px; }
+form.contact-form{ display:flex; flex-direction:column; gap:1.25rem; width:100%; min-width:520px; }
+@media (max-width:780px){
+  form.contact-form{ width:100%; min-width:0; }
+}
+
+/* titre du formulaire : même style que section-head h2, sans padding dupliqué */
+.form-title{
+  font-family:var(--serif); font-weight:400; font-style:italic;
+  font-size:clamp(1.6rem,3vw,2.2rem);
+  margin:0 0 1.75rem;
+}
 form.contact-form label{
   font-family:var(--mono); font-size:.68rem; letter-spacing:.09em; text-transform:uppercase;
   color:var(--fg-faint);
@@ -357,6 +377,7 @@ form.contact-form textarea{
   background:var(--bg); border:1px solid var(--line); color:var(--fg);
   padding:.8rem .95rem; font-family:var(--sans); font-size:.95rem; border-radius:0;
   resize:vertical;
+  width: 50%;
 }
 form.contact-form input:focus,
 form.contact-form textarea:focus{ border-color:var(--fg); outline:none; }
@@ -369,7 +390,14 @@ form.contact-form button{
 }
 form.contact-form button:hover{ background:var(--bg); color:var(--accent); border-color:var(--accent); }
 
-/* reveal on scroll */
+.map-embed{
+  border:0;
+  height:520px;
+  filter:grayscale(1) contrast(1.05);
+}
+@media (max-width:780px){
+  .map-embed{ height:360px; }
+}
 .reveal{ opacity:0; transform:translateY(14px); transition:opacity .7s ease, transform .7s ease; }
 .reveal.is-visible{ opacity:1; transform:translateY(0); }
 
@@ -530,7 +558,7 @@ figure.full-width picture img {
     height: 100vh;
     z-index: 1; /* Niveau le plus bas */
     overflow: hidden;
-    background-color: #000;
+    background-color: hsl(0, 0%, 100%);
 }
 
 .slide { 
