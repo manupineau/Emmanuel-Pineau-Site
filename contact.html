@@ -36,17 +36,37 @@
 
 <section class="hero">
   <h1>
-  <p><em>Emmanuel Pineau / +33 612 217 427</em></p>
+  <p>Emmanuel Pineau / +33 612 217 427</p>
   </h1>
-  <div class="contact-grid">
-  <div class="reveal">
-    <h3>Write directly</h3>
-    <a class="big-link" href="mailto:emmanuel@emmanuelpineau.net">emmanuel@emmanuelpineau.net</a>
-    <p style="margin-top:1.5rem; color:var(--fg-dim); font-family:var(--mono); font-size:.8rem;">
-      Paris, France
-    </p>
-  </div>
-</div>
+  <p><h1><em>Studio_18</em></h1></p>
+  <p><h1><em>18 rue du sergent Bobillot</em></h1></p> 
+  <p><h1><em>93100 Montreuil</em></h1></p>
+</section>
+
+<iframe class="map-embed" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.0843767098095!2d2.4298508918415718!3d48.8566013974136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66dde0befd389%3A0x10835ac8953f867f!2sEmmanuel%20Pineau%20Studio_18!5e0!3m2!1sfr!2sfr!4v1788246269594!5m2!1sfr!2sfr" width="100%" allowfullscreen="yes" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+<section class="contact-grid" style="grid-template-columns:1fr;">
+  <h2 class="form-title">Send me a message</h2>
+  <form class="contact-form" action="https://formspree.io/f/xrpgppwl" method="POST">
+    <div>
+      <p><label for="name">Name</label></p>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+      <p><label for="email">Email</label></p>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+      <p><label for="subject">Subject</label></p>
+      <input type="text" id="subject" name="subject">
+    </div>
+    <div>
+      <p><label for="message">Message</label></p>
+      <textarea id="message" name="message" rows="6" required></textarea>
+    </div>
+    <input type="text" name="_gotcha" style="display:none">
+    <button type="submit">Send</button>
+  </form>
 </section>
 
 <div class="intro-block">
