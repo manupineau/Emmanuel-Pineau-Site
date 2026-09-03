@@ -240,7 +240,7 @@ nav.primary-nav a[aria-current="page"]::after{
 .frame .caption .title{
   font-family:var(--sans); font-style:italic; font-size:1.08rem;
   display:block;
-  color:var(--fg);
+  color:var(--fg-dim);
   transition:color .25s ease;
 }
 .frame:hover .caption .title{ color:var(--accent); }
@@ -252,13 +252,14 @@ nav.primary-nav a[aria-current="page"]::after{
 
 /* ---------- section header / dividers ---------- */
 .section-head{
-  padding:3.5rem var(--gutter) 1.75rem;
+  padding:1.5rem var(--gutter) 1.75rem;
   display:flex; align-items:baseline; justify-content:space-between;
   gap:1rem; flex-wrap:wrap;
 }
 .section-head h2{
-  font-family:var(--sans); font-weight:400; font-style:italic;
+  font-family:var(--sans); font-weight:200; font-style:italic;
   font-size:clamp(1.6rem,3vw,2.2rem);
+  color:var(--fg-dim);
   margin:0;
 }
 .section-head .roll-count{
@@ -298,7 +299,7 @@ hr.rule{
 .intro-block a.textlink:hover{ color:var(--accent); }
 .intro-block .cta{
   display:inline-flex; align-items:center; gap:.6rem;
-  margin-top:1.75rem;
+  margin-top:0.5rem;
   font-family:var(--mono); font-size:.72rem; letter-spacing:.09em; text-transform:uppercase;
   color:var(--fg);
   border-bottom:1px solid var(--fg);
@@ -306,6 +307,16 @@ hr.rule{
   transition:color .25s ease, border-color .25s ease;
 }
 .intro-block .cta:hover{ color:var(--accent); border-color:var(--accent); }
+
+/* variante compacte : crédits + vidéo, sans les grands espaces du bloc bio */
+.intro-block.video-entry{
+  padding:0 var(--gutter) 2.5rem;
+}
+.intro-block.video-entry p{
+  font-family:var(--sans); font-size:clamp(1.2rem,2.2vw,1.5rem); font-weight:200; font-style:italic;
+  line-height:1.5; max-width:none; margin:0 0 .5rem;
+  max-width:56ch;
+}
 
 @media (max-width:780px){
   .intro-block{ grid-template-columns:1fr; gap:2.5rem; }
