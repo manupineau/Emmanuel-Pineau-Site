@@ -114,6 +114,16 @@
 
   <!-- Projets clients (articles) -->
   <url>
+    <loc>https://www.emmanuelpineau.net/article-ADV-web-2026.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.emmanuelpineau.net/article-prune-goldschmidt.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.emmanuelpineau.net/article-ADV-web-2025.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
