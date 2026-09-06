@@ -11,7 +11,8 @@
   --fg:        #131211;
   --fg-dim:    #74726c;
   --fg-faint:  #a8a6a0;
-  --accent:    #6d2432; /* bordeaux discret — usage rare */
+  --accent-m:  #efe710; /* bordeaux discret — usage rare */
+  --accent:    #1f495d; 
   --line:      #e6e4df;
   --line-strong:#131211;
 
@@ -93,21 +94,43 @@ nav.primary-nav a{
   padding:.25rem 0;
   transition:color .25s ease;
 }
-nav.primary-nav a:hover,
-nav.primary-nav a[aria-current="page"]{ color:var(--fg); }
-nav.primary-nav a[aria-current="page"]::after{
-  content:"";
-  position:absolute; left: 0;; right:0; bottom:-4px;
-  height:1px; background:var(--accent);
+nav.primary-nav a {
+  position: relative; /* Indispensable pour positionner le surlignage */
+  text-decoration: none;
+  z-index: 1; /* Permet de gérer la superposition */
 }
 
-.menu-toggle{
-  display:none;
-  background:none; border:1px solid var(--line); color:var(--fg);
-  width:2.4rem; height:2.4rem; border-radius:0;
-  font-family:var(--mono); font-size:.9rem;
-  cursor:pointer;
+nav.primary-nav a:hover,
+nav.primary-nav a[aria-current="page"] { 
+  color: var(--fg); 
 }
+
+/* Effet de surlignage sur la page active */
+nav.primary-nav a[aria-current="page"]::after {
+  content: "";
+  position: absolute; 
+  left: -4px;  /* Déborde légèrement à gauche pour le style */
+  right: -4px; /* Déborde légèrement à droite pour le style */
+  bottom: 2px; /* Aligné sur le bas du texte */
+  height: 45%; /* Couvre un peu moins de la moitié du texte */
+  background: var(--accent-m);
+  opacity: 0.7; /* Rend la couleur var(--accent) semi-transparente pour le surlignage */
+  z-index: -1;  /* Place le surlignage DERRIÈRE le texte */
+}
+
+.menu-toggle {
+  display: none;
+  background: none; 
+  border: 1px solid var(--line); 
+  color: var(--fg);
+  width: 2.4rem; 
+  height: 2.4rem; 
+  border-radius: 0;
+  font-family: var(--mono); 
+  font-size: .9rem;
+  cursor: pointer;
+}
+
 
 @media (max-width: 780px){
   nav.primary-nav{
@@ -230,7 +253,7 @@ nav.primary-nav a[aria-current="page"]::after{
 }
 .frame .caption .index-num{
   font-family:var(--mono); font-size:.68rem; letter-spacing:.03em;
-  color:var(--fg-faint);
+  color:var(--fg-dim);
   flex:0 0 auto;
 }
 .frame .caption .title-group{
@@ -240,13 +263,13 @@ nav.primary-nav a[aria-current="page"]::after{
 .frame .caption .title{
   font-family:var(--sans); font-style:italic; font-size:1.08rem;
   display:block;
-  color:var(--fg-dim);
+  color:var(--fg);
   transition:color .25s ease;
 }
 .frame:hover .caption .title{ color:var(--accent); }
 .frame .caption .tag{
   font-family:var(--mono); font-size:.64rem; letter-spacing:.09em;
-  text-transform:uppercase; color:var(--fg-faint);
+  text-transform:uppercase; color:var(--accent);
   display:block; margin-top:.15rem;
 }
 
@@ -293,7 +316,8 @@ hr.rule{
   color:var(--fg);
 }
 .intro-block a.textlink{
-  color:var(--fg); border-bottom:0px solid var(--accent);
+  color:var(--fg); 
+  border-bottom:1px solid var(--accent);
   font-style:normal;
 }
 .intro-block a.textlink:hover{ color:var(--accent); }
@@ -329,7 +353,8 @@ hr.rule{
   flex-wrap:wrap; gap:1rem;
   font-family:var(--mono); font-size:.7rem; letter-spacing:.05em;
   color:var(--fg-faint);
-  border-top:1px solid var(--line);
+  border-top:1px solid var(--accent-m);
+  background-color:var(--accent-m); opacity:1; /* voile très léger pour distinguer le footer du reste de la page */
 }
 .site-footer a{ color:var(--fg-dim); transition:color .2s ease; }
 .site-footer a:hover{ color:var(--accent); }
@@ -403,7 +428,7 @@ form.contact-form button{
   padding:.9rem 1.6rem; cursor:pointer; border-radius:0;
   transition:background .25s ease, color .25s ease, border-color .25s ease;
 }
-form.contact-form button:hover{ background:var(--bg); color:var(--accent); border-color:var(--accent); }
+form.contact-form button:hover{ background:var(--accent-m); color:var(); border-color:var(--accent-m); }
 
 .map-embed{
   border:0;
@@ -460,7 +485,7 @@ form.contact-form button:hover{ background:var(--bg); color:var(--accent); borde
 }
 .masonry-item .caption .index-num{
   font-family:var(--mono); font-size:.68rem; letter-spacing:.03em;
-  color:var(--fg-faint);
+  color:var(--fg-dim  );
   flex:0 0 auto;
 }
 .masonry-item .caption .title-group{
@@ -476,7 +501,7 @@ form.contact-form button:hover{ background:var(--bg); color:var(--accent); borde
 .masonry-item:hover .caption .title{ color:var(--accent); }
 .masonry-item .caption .tag{
   font-family:var(--mono); font-size:.64rem; letter-spacing:.09em;
-  text-transform:uppercase; color:var(--fg-faint);
+  text-transform:uppercase; color:var(--accent);
   display:block; margin-top:.15rem;
 }
 .full-width{
