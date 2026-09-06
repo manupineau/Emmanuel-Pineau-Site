@@ -154,11 +154,18 @@ nav.primary-nav a[aria-current="page"]::after {
     pointer-events:auto; 
     transform:translateY(0); 
   }
+
+  nav.primary-nav a:hover,
+  nav.primary-nav a[aria-current="page"]{ color:var(--link); }
+  nav.primary-nav a[aria-current="page"]::after{
+  content:"";
+  position:absolute; left: 0;; right:0; bottom:-4px;
+  height:0px; background:var(--accent);
+  }
   
   nav.primary-nav a {
     background:#fff; 
     background-size: 100%;
-    /* 🛠️ Correction syntaxe (remplacement de 0.9 par 0.9rem) */
     padding: 1.1rem 0.9rem; 
     border-bottom: 1px solid var(--line);
     font-size: .95rem;
@@ -361,6 +368,12 @@ hr.rule{
 .site-footer a{ color:var(--fg-dim); transition:color .2s ease; }
 .site-footer a:hover{ color:var(--accent); }
 .site-footer .socials{ display:flex; gap:1.4rem; }
+
+@media (max-width:780px){
+.site-footer{
+  border-top:1px solid var(--fg-dim);
+  background-color:var(--bg);} /* sur mobile, on enlève le voile pour que le footer reste lisible */
+}
 
 /* ---------- generic page (about / contact / photography) ---------- */
 .page-header{
