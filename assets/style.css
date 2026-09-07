@@ -460,7 +460,7 @@ form.contact-form button:hover{ background:var(--accent-m); color:var(); border-
 @media (max-width:780px){
   .map-embed{ height:360px; }
 }
-.reveal{ opacity:0; transform:translateY(14px); transition:opacity .7s ease, transform .7s ease; }
+.reveal{ opacity:0; transform:translateY(14px); transition:opacity 1.5s ease, transform 1.5s ease; }
 .reveal.is-visible{ opacity:1; transform:translateY(0); }
 
 /* masonry gallery */
@@ -672,6 +672,7 @@ figure.full-width picture img {
 .spacer {
   height: 2rem; /* Ajustez la hauteur de l'espace ici (ex: 2rem, 4rem, 50px) */
 }
+
 
 
 
