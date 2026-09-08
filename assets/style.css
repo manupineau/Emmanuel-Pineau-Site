@@ -357,13 +357,13 @@ hr.rule{
 
 /* ---------- footer ---------- */
 .site-footer{
-  padding:2.75rem var(--gutter);
+  padding:1.5rem var(--gutter);
   display:flex; align-items:center; justify-content:space-between;
   flex-wrap:wrap; gap:1rem;
   font-family:var(--mono); font-size:.7rem; letter-spacing:.05em;
   color:var(--fg-faint);
-  border-top:1px solid var(--accent-m); opacity:0.9;
-  background-color:var(--accent-m); opacity:0.9; /* voile très léger pour distinguer le footer du reste de la page */
+  border-top:0px solid color-mix(in srgb, var(--accent-m) 90%, transparent);
+  background-color:color-mix(in srgb, var(--accent-m) 90%, transparent);
 }
 .site-footer a{ color:var(--fg-dim); transition:color .2s ease; }
 .site-footer a:hover{ color:var(--accent); }
