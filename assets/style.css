@@ -460,8 +460,9 @@ form.contact-form button:hover{ background:var(--accent-m); color:var(); border-
 @media (max-width:780px){
   .map-embed{ height:360px; }
 }
-.reveal{ opacity:0; transform:translateY(14px); transition:opacity 1.5s ease, transform 1.5s ease; }
-.reveal.is-visible{ opacity:1; transform:translateY(0); }
+/* Masqué uniquement si JavaScript est actif (classe .js posée dans le <head>) */
+.js .reveal{ opacity:0; transform:translateY(14px); transition:opacity 1.5s ease, transform 1.5s ease; }
+.js .reveal.is-visible{ opacity:1; transform:translateY(0); }
 
 /* masonry gallery */
 .masonry-gallery {
