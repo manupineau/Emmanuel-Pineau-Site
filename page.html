@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<meta name="keywords" content="Emmanuel Pineau, biography, experience, education, cinema, sophie delaporte">
+<meta name="description" content="A short biography of Emmanuel Pineau giving information on his training, his experience in cinema and his collaboration with Sophie Delaporte.">
+<meta name="author" content="Emmanuel Pineau">
+<meta property="og:image" content="https://www.emmanuelpineau.net/images/new/Crop-16x9-HD/1200x630/Emmanuel-Pineau-blog-crop-HD-29-1200x630.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:type" content="image/jpeg" /> 
+<title>About | Emmanuel Pineau</title>
+<link rel="icon" type="image/x-icon" href="/images/Emmanuel-Pineau-logo-2025.png">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="/" class="logo">emmanuel pineau</a>
+  <nav class="primary-nav">
+    <a href="video.html">video</a>
+    <a href="recent-work.html">new</a>
+    <a href="photography.html">photography</a>
+    <a href="about.html" aria-current="page">about</a>
+    <a href="contact.html">contact</a>
+    <a href="blog.html">blog</a>
+  </nav>
+  <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+</header>
+<style>
+    .about-container {
+  display: grid;
+  grid-template-columns: clamp(300px, 35vw, 500px) 1fr; /* Image à gauche, texte à droite */
+  gap: var(--gutter);
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 var(--gutter);
+}
+
+.about-content h1 {
+  font-family: var(--sans); /* Ou votre police de logo */
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.meta-birth {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  color: var(--fg-dim);
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.biography-text {
+  font-family: var(--sans); /* Inter est ultra-lisible pour les longs paragraphes */
+  font-size: 1rem;
+  line-height: 1.7; /* Donne de l'air entre les lignes */
+  color: var(--fg);
+  max-width: 60ch; /* Règle d'or : max 60 caractères par ligne pour le confort visuel */
+}
+
+.biography-text p {
+  margin-bottom: 1.8rem;
+}
+
+.about-links a {
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  color: var(--fg-dim);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.about-links a:hover {
+  border-bottom-color: var(--line-strong); /* Soulignement fin au survol */
+  color: var(--fg);
+}
+
+/* Version Mobile */
+@media (max-width: 768px) {
+  .about-container {
+    grid-template-columns: 1fr; /* Tout passe sur une seule colonne */
+    margin: 2rem auto;
+  }
+}
+</style>
+
+
+<main class="about-container">
+  
+  <!-- Colonne ou bloc Image (Le portrait grand format mentionné) -->
+  <div class="about-media">
+    <img src="votre-portrait-paris-2025.jpg" alt="Emmanuel Pineau - Paris, June 2025" loading="lazy">
+  </div>
+
+  <!-- Colonne Texte -->
+  <div class="about-content">
+    <h1>About</h1>
+    <p class="meta-birth">Born in 1972 — Cholet, France</p>
+    
+    <div class="biography-text">
+      <p>My practice is rooted in light—its construction...</p>
+      <p>Alongside my digital and cinematic work...</p>
+      <p>Trained in cinematography at ENS Louis-Lumière...</p>
+      <!-- Reste de votre texte... -->
+    </div>
+
+    <!-- Vos liens de bas de page épurés -->
+    <div class="about-links">
+      <a href="https://unifrance.org..." target="_blank">Unifrance</a> · 
+      <a href="https://imdb.com..." target="_blank">IMDb</a> · 
+      <a href="https://instagram.com..." target="_blank">Instagram</a>
+    </div>
+  </div>
+
+</main>
+</body>
